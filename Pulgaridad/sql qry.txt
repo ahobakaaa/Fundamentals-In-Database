@@ -1,0 +1,16 @@
+CREATE DATABASE fleya;
+
+CREATE TABLE students (
+    StudentID INT AUTO_INCREMENT PRIMARY KEY,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    DateOfBirth DATE NOT NULL,
+    Department ENUM('College of Engineering', 'College of Information Technology', 'College of Business Administration') NOT NULL,
+    Program ENUM('Computer Science', 'Mechanical Engineering', 'Civil Engineering', 'Accountancy', 'Information Technology') NOT NULL,
+    Email VARCHAR(100) UNIQUE
+);
+
+INSERT INTO Students (FirstName, LastName, DateOfBirth, Department, Program, Email)
+VALUES
+('Juan', 'Dela Cruz', '2002-05-15', 'College of Engineering', 'Mechanical Engineering', 'juan.delacruz@example.com'),
+('Maria', 'Santos', '2003-08-22', 'College of Business Administration', 'Accountancy', 'maria.santos@example.com');
