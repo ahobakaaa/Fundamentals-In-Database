@@ -1,4 +1,4 @@
- To run this application, the user must log in first with their password and click 'Done'.
+ To run this application, the user must log in first with the password "1234" and click 'Done'.
  Once the user logged in succesfully,  they will be directed to the next page which is to fill
  out the form. To use the create method, the user must fill the boxes with their ID, first name,
  last name, birthday, and email, then select their program and their department. Once this is
